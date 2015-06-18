@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Linq.Expressions;
 using System.Reflection;
+using Conditions.Guards;
+using Conditions.Guards.Extensions;
 
 namespace CodeHelpers
 {
@@ -8,14 +10,14 @@ namespace CodeHelpers
 	{
 		public static string NameOf<T>(Expression<Func<T, object>> expression)
 		{
-			Guards.IsNotNull(expression);
+			Check.If(expression).IsNotNull();			
 
 			return GetPropertyName(expression);
 		}
 
 		public static string NameOf<T>(this T @object, Expression<Func<T, object>> expression)
 		{
-			Guards.IsNotNull(expression);
+			Check.If(expression).IsNotNull();
 
 			return NameOf(expression);
 		}
