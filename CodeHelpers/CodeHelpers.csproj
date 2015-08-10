@@ -102,6 +102,8 @@
   <ItemGroup>
     <Compile Include="MVC\ActionFilters\ActionResolverAttribute.cs" />
     <Compile Include="Names.cs" />
+    <Compile Include="Patterns\Databases\IdentityMap.cs" />
+    <Compile Include="Patterns\Databases\IdentityMapElement.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitTests\AutoFixture\AutoNSData.cs" />
   </ItemGroup>
