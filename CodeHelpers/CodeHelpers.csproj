@@ -134,6 +134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MVC\ActionFilters\ActionResolverAttribute.cs" />
+    <Compile Include="MVC\DependencyInjection\CastleControllerFactory.cs" />
     <Compile Include="Names.cs" />
     <Compile Include="Patterns\Databases\IdentityMap.cs" />
     <Compile Include="Patterns\Databases\IdentityMapElement.cs" />
