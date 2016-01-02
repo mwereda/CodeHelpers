@@ -29,16 +29,6 @@ namespace CodeHelpers.MVC.DependencyInjection
             this.Container = container;
         }
 
-        protected override IController GetControllerInstance(RequestContext requestContext, Type controllerType)
-        {
-            if (controllerType == null)
-            {
-                return null;
-            }
-
-            return Container.Resolve(controllerType) as IController;
-        }
-
         public override void ReleaseController(IController controller)
         {
             var disposableController = controller as IDisposable;
@@ -48,6 +38,16 @@ namespace CodeHelpers.MVC.DependencyInjection
             }
 
             Container.Release(controller);
+        }
+
+        protected override IController GetControllerInstance(RequestContext requestContext, Type controllerType)
+        {
+            if (controllerType == null)
+            {
+                return null;
+            }
+
+            return Container.Resolve(controllerType) as IController;
         }
     }
 }
