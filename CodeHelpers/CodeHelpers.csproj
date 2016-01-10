@@ -135,6 +135,7 @@
   <ItemGroup>
     <Compile Include="MVC\ActionFilters\ActionResolverAttribute.cs" />
     <Compile Include="MVC\DependencyInjection\CastleControllerFactory.cs" />
+    <Compile Include="MVC\DependencyInjection\ContainerExtensions.cs" />
     <Compile Include="Names.cs" />
     <Compile Include="Patterns\Databases\IdentityMap.cs" />
     <Compile Include="Patterns\Databases\IdentityMapElement.cs" />
@@ -144,6 +145,7 @@
     <Compile Include="Time\ITimeProvider.cs" />
     <Compile Include="Time\TimeProvider.cs" />
     <Compile Include="UnitTests\AutoFixture\AutoNSData.cs" />
+    <Compile Include="WebAPI\DependencyInjection\ContainerExtensions.cs" />
     <Compile Include="WebAPI\DependencyInjection\WindsorCompositionRoot.cs" />
     <Compile Include="Web\FakeHttpContext.cs" />
     <Compile Include="Web\FakeHttpRequest.cs" />
