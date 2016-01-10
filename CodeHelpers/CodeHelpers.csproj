@@ -133,6 +133,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DI\Castle\ContainerRegistrationExtensions.cs" />
     <Compile Include="MVC\ActionFilters\ActionResolverAttribute.cs" />
     <Compile Include="MVC\DependencyInjection\CastleControllerFactory.cs" />
     <Compile Include="MVC\DependencyInjection\ContainerExtensions.cs" />
